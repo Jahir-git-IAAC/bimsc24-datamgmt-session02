@@ -37,7 +37,7 @@ onMounted(() => {
 const mainTxt = ref("");
 const textInput = ref("");
 function addToMainTxt() {
-   mainTxt.value += textInput.value;
+   mainTxt.value += textInput.value + "\n";
 }
 
 // coloring 
@@ -46,7 +46,7 @@ const colorInput = ref("");
 const divNameInput = ref("")
 var changecolor = null
 
-// also the function syntax is diffrent 
+// Color change function 
 onMounted(() => {
     changecolor = () =>{
         let mySelectedDiv = document.getElementById(divNameInput.value)
@@ -65,7 +65,7 @@ onMounted(() => {
 
 <div id="navbar" class="container">  
         <div id="title"  >
-            CBDM assignment 02
+            Cloud-Based-Data-Management Assignment 02
         </div>
         <div id="logo">
             <img src="./ComfyUI_00043_.png" alt="profilepic">
@@ -95,7 +95,6 @@ onMounted(() => {
             <button @click="addToMainTxt">
                 Add text here to show it inside "Main"
             </button>
-          
             <br/>
             <br/>
             <br/>

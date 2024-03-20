@@ -46,7 +46,6 @@ const colorInput = ref("");
 const divNameInput = ref("")
 var changecolor = null
 
-// using this function to insure the DOM is loaded before fire the fuction . 
 // also the function syntax is diffrent 
 onMounted(() => {
     changecolor = () =>{
@@ -95,6 +94,19 @@ onMounted(() => {
             <input class="inputbox" v-model="textInput" type="text" placeholder="write here!">
             <button @click="addToMainTxt">
                 Add text here to show it inside "Main"
+            </button>
+          
+            <br/>
+            <br/>
+            <br/>
+            <h3>Change specific box color</h3>
+            <h5>main / sidebar / navbar</h5>
+            <input class="inputbox" v-model="divNameInput" type="text" placeholder="main/sidebar/navbar">
+            <br/>
+            <input class="inputbox" v-model="colorInput" type="text" placeholder="write color here!">
+            <br/>
+            <button @click="changecolor">
+                Change
             </button>
            
 
@@ -172,8 +184,8 @@ img{
 #main{
     width: 98%;
     word-break:break-all;
-    border-color: #012413;
-    color: #021b19;
+    border-color: #dde6e1;
+    color: #161818;
     font-size:xx-large;
     height: calc(99%);
     border-style: groove;

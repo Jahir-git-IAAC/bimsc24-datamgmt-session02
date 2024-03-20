@@ -1,0 +1,26 @@
+button {
+    background-color: #010303;
+    border: #000000;
+    border-width: thin;
+    color: rgb(255, 255, 255);
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 98%;
+    align-items: center;
+    font-family: 'monospace';
+  }
+  
+  button:hover {
+    background-color: #f7513b;
+  }
+
+
+
+  
